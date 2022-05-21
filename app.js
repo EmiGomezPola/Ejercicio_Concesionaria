@@ -1,3 +1,4 @@
+/*
 // crep im array con los diferentes vehiculos de la concesionaria.
 let vehiculos = [
     {
@@ -24,13 +25,13 @@ let vehiculos = [
         Cilindrada: "160cc",
         Precio: 80500.50
     }
-    ]
+    ];
 // paso el valor numerico del Precio a formato de Pesos
 const valorPeso = new Intl.NumberFormat('es-CO', {
     style: 'currency',
     currency: 'COP',
     minimumFractionDigits: 0
-})
+});
 
 // itero el array con sus objetos para obtener la lista de los vehiculos
    for( let i = 0; i< vehiculos.length; i++){
@@ -41,7 +42,7 @@ const valorPeso = new Intl.NumberFormat('es-CO', {
 
     }
 } 
-console.log('===========================================================================')
+console.log('===========================================================================');
  
 //obtengo la lista decreciente segun el valor del precio de todos los vehiculos
 let ordenDecreciente = vehiculos.sort((a,b) => {
@@ -69,7 +70,7 @@ const letra = vehiculos.find(function(letraY){
 })
 //console.log(letra)
 
-const precioY= letra.Precio
+const precioY= letra.Precio;
 //console.log(precioA)
 
 console.log('Vehiculo que contiene en el modelo la letra "Y": '+ letra.Marca +' '+ letra.Modelo +' ' +valorPeso.format(precioY));
@@ -83,5 +84,5 @@ function listado(ordenDecreciente ){
     }
 }
 listado(ordenDecreciente);
-
+*/
 
